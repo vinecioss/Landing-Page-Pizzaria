@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Delícia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🍕 Pizzaria Delícia</div>
+        <nav>
+            <ul>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#sabores">Sabores</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#formulario">Peça já</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>A pizza quentinha que chega até você!</h1>
+        </section>
+
+        <!-- Benefícios -->
+        <section id="beneficios">
+            <h2>Por que escolher nossa pizzaria?</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="icone">🍕</div>
+                    <p>Ingredientes frescos</p>
+                </div>
+                <div class="card">
+                    <div class="icone">🏍️</div>
+                    <p>Entrega rápida</p>
+                </div>
+                <div class="card">
+                    <div class="icone">❤️</div>
+                    <p>Sabor inigualável</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sabores -->
+        <section id="sabores">
+            <h2>Nossos Sabores</h2>
+            <div class="tags">
+                <span class="tag">Calabresa</span>
+                <span class="tag">Margherita</span>
+                <span class="tag">Frango com Catupiry</span>
+                <span class="tag">Portuguesa</span>
+                <span class="tag">Vegetariana</span>
+            </div>
+        </section>
+
+        <!-- Depoimentos -->
+        <section id="depoimentos">
+            <h2>O que nossos clientes dizem</h2>
+            <div class="depoimento">
+                <img src="assets/img/cliente-joao.jpg" alt="Foto do cliente João" class="depoimento-foto">
+                <p>"Entrega super rápida, recomendo demais!" – João</p>
+            </div>
+            <div class="botoes-depoimento">
+                <button type="button">Anterior</button>
+                <button type="button">Próximo</button>
+            </div>
+        </section>
+
+        <!-- Formulário de Pedido -->
+        <section id="formulario">
+            <h2>Peça já a sua pizza!</h2>
+            <form action="obrigado.html" method="get">
+                <input type="text" name="nome" placeholder="Nome completo" required>
+                <input type="tel" name="telefone" placeholder="Telefone" required>
+                <input type="text" name="endereco" placeholder="Endereço de entrega" required>
+
+                <select name="sabor" required>
+                    <option value="">Escolha o sabor</option>
+                    <option value="calabresa">Calabresa</option>
+                    <option value="margherita">Margherita</option>
+                    <option value="frango-catupiry">Frango com Catupiry</option>
+                    <option value="portuguesa">Portuguesa</option>
+                    <option value="vegetariana">Vegetariana</option>
+                </select>
+
+                <fieldset>
+                    <legend>Forma de pagamento:</legend>
+                    <label><input type="radio" name="pagamento" value="dinheiro" required> Dinheiro</label>
+                    <label><input type="radio" name="pagamento" value="cartao"> Cartão</label>
+                    <label><input type="radio" name="pagamento" value="pix"> PIX</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Adicionais:</legend>
+                    <label><input type="checkbox" name="borda"> Borda recheada</label>
+                    <label><input type="checkbox" name="bebida"> Bebida</label>
+                </fieldset>
+
+                <button type="submit">Enviar Pedido</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Projeto - Pizzaria (TADS)</p>
+        <p>Siga-nos nas redes sociais</p>
+        <div class="redes-sociais">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <p>&copy; 2025 Pizzaria Delícia</p>
+    </footer>
+
+</body>
+</html>

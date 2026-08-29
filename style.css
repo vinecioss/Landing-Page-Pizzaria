@@ -1,0 +1,314 @@
+/* ===== Reset básico ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: #c0392b;
+    color: #fff;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* espaço para o header fixo não cobrir o conteúdo */
+main {
+    margin-top: 65px;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    background-image: url("assets/img/pizza.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 20px 30px;
+    font-size: 2rem;
+    border-radius: 8px;
+}
+
+/* ===== Seção Benefícios ===== */
+#beneficios {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#beneficios h2 {
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px 20px;
+    width: 250px;
+}
+
+.card .icone {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* ===== Seção Sabores ===== */
+#sabores {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fdebd0;
+}
+
+#sabores h2 {
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: #f5cba7;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+/* ===== Seção Depoimentos ===== */
+#depoimentos {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #eee;
+}
+
+#depoimentos h2 {
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.depoimento-foto {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.depoimento p {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.botoes-depoimento button {
+    background-color: #c0392b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* ===== Formulário ===== */
+#formulario {
+    padding: 60px 20px;
+}
+
+#formulario h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input,
+form select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+legend {
+    color: #c0392b;
+    font-weight: bold;
+    padding: 0 5px;
+}
+
+fieldset label {
+    margin-right: 15px;
+}
+
+form button {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #219150;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #1c1c1c;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.redes-sociais {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-size: 1.5rem;
+}
+
+/* ===== Página obrigado.html ===== */
+.obrigado {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.obrigado h1 {
+    color: #c0392b;
+    margin-bottom: 15px;
+}
+
+.obrigado a {
+    margin-top: 20px;
+    background-color: #c0392b;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    main {
+        margin-top: 100px;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 1.4rem;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.1rem;
+        padding: 15px;
+    }
+
+    .tag {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+    }
+}
