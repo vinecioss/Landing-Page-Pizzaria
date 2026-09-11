@@ -215,6 +215,17 @@ fieldset label {
     margin-right: 15px;
 }
 
+.form-erro {
+    list-style: disc;
+    padding-left: 20px;
+    color: #c0392b;
+    font-size: 0.9rem;
+}
+
+.form-erro:empty {
+    display: none;
+}
+
 form button {
     background-color: #27ae60;
     color: #fff;
